@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,800;1,200;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div class="box2">
+        <nav>
+           <a href="index.html"><img src="images/LOGO.jpg" alt="logo"></a>
+              <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>   
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>  
+        </nav>
+        <h1>Contact us</h1>
+</div>
+
+<!------- CONTACT -----> 
+<div class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102799.65086778135!2d127.24527588689033!3d36.37315239526829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356548d7ba4a6601%3A0xd196d69d988ad3b5!2sDaejeon%2C%20South%20Korea!5e0!3m2!1sfil!2sph!4v1676376453482!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+ <div class="contact-us">
+
+    <div class="row">
+       <div class="contact-col">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+                <h5>Korea mo mukha mo</h5>
+                 <p>Korealengke</p>
+            </span>
+           </div>
+           <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+                <h5>123456789</h5>
+                <p>Monday to Sunday, 24 hours open</p>
+            </span>
+           </div>
+           <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h5>davenykel47@gmail.com</h5>
+                <p>mag email ka wag ka matakot</p>
+            </span>
+           </div>
+       </div>
+     
+    <div class="contact-col">
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="coffee" placeholder="Enter your Coffee" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="footer">
+    <h4>About Us</h4>
+    <p>“Together, we can help people build stronger communities — were just getting started.”</p>
+    <div class="icons">
+     <i class="fa-brands fa-facebook-f"></i></i>
+     <i class="fa-brands fa-instagram"></i>
+     <i class="fa-brands fa-twitter"></i>
+    </div>
+</div>
+
+
+<!-----Javascript for Toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+
+    }
+</script>
+
+</body>
+</html>
